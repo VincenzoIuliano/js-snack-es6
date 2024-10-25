@@ -1,6 +1,5 @@
 console.log('Object Snack')
 
-
 // CREO UN ARRAY CHE CONTENGA DUE OGGETTI: OGNI OGGETTO E' UNA BICI DA CORSA
 
 let bikes = [
