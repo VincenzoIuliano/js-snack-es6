@@ -25,4 +25,11 @@ let footballClubs = [
     },
 ]
 
+// ASSEGNO NUMERI RANDOM AI PARAMENTRI A 0
+
+for (let i=0 ; i < footballClubs.length ; i++) {
+    footballClubs[i]["punti fatti"]=Math.round(Math.random()*100 + 1);
+    footballClubs[i]["falli subiti"]=Math.round(Math.random()*100 + 1);
+}
+
 console.log(footballClubs)
