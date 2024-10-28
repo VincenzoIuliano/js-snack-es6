@@ -13,6 +13,12 @@ function sliceArray(elements,start,end) {
     //     start=0
     // }
 
+    end = Math.min(end, elements.length) // prendo il valore al max quanto elements.length
+
+    // if (end>elements.length) {
+        end = elements.length
+    }
+
     const result = []
 
     for (let i=start; i < end ; i++) {
@@ -26,7 +32,7 @@ function sliceArray(elements,start,end) {
 }
 
 const numbers = [4,6,5,9,7,8,6,1,2]
-// number.slice(3,6) sarebbe equivalente
+// number.slice(start,end) sarebbe equivalente
 
-const newNumbers = sliceArray(numbers,-20,6) // [9,7,8] risultato atteso
+const newNumbers = sliceArray(numbers,-20,100) 
 console.log(newNumbers)
