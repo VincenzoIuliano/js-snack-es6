@@ -1,6 +1,5 @@
 console.log('Bonus snack')
 function sliceArray(elements,start,end) {
-
     // controlli da fare:
     // -elementes must be an Array
     // -start, end must be a number (interger)
@@ -15,9 +14,9 @@ function sliceArray(elements,start,end) {
 
     end = Math.min(end, elements.length) // prendo il valore al max quanto elements.length
 
-    // if (end>elements.length) {
-        end = elements.length
-    }
+    // // if (end>elements.length) {
+    //     end = elements.length
+    // }
 
     const result = []
 
@@ -26,7 +25,7 @@ function sliceArray(elements,start,end) {
         // console.log(i, el)
 
         result.push(el)
-    }
+    };
 
     return result
 }
