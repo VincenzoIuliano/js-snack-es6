@@ -29,7 +29,7 @@ let footballClubs = [
 
 for (let i=0 ; i < footballClubs.length ; i++) {
     footballClubs[i]["puntifatti"]=Math.round(Math.random()*100 + 1);
-    footballClubs[i]["fallisubiti"]=Math.round(Math.random()*100 + 1);
+    footballClubs[i]["fallisubiti"]=Math.round(Math.random()*50 + 1);
 }
 
 console.log(footballClubs)
