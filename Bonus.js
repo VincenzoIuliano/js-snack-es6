@@ -6,7 +6,7 @@ function sliceArray(elements,start,end) {
     // -start must be lower/equal then end
     // end <= elements.length
 
-    if!(Array.isArray(elements)) { // ritorna true se quello che gli passiamo è un array
+    if (!Array.isArray(elements)) { // ritorna true se quello che gli passiamo è un array
         console.error('Elements must be an array')
     } 
     
