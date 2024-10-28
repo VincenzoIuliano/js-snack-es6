@@ -6,6 +6,14 @@ function sliceArray(elements,start,end) {
     // -start must be lower/equal then end
     // end <= elements.length
 
+    if!(Array.isArray(elements)) { // ritorna true se quello che gli passiamo è un array
+        console.error('Elements must be an array')
+    } 
+    
+    if(isNaN(start) || isNaN(end)) {
+        console.error('Start or end not a number')
+    }
+    
     start= Math.max(start,0) //prendo il valore più grande tra start e 0
 
     // if (start<0) {
